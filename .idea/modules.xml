@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/helloservice/ax-reporterservice.iml" filepath="$PROJECT_DIR$/helloservice/ax-reporterservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cruxscalademo.iml" filepath="$PROJECT_DIR$/cruxscalademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distro/demo/hello-distribution-demo.iml" filepath="$PROJECT_DIR$/distro/demo/hello-distribution-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distro/hellodistro.iml" filepath="$PROJECT_DIR$/distro/hellodistro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloservice/helloservice.iml" filepath="$PROJECT_DIR$/helloservice/helloservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloweb/helloweb.iml" filepath="$PROJECT_DIR$/helloweb/helloweb.iml" />
+    </modules>
+  </component>
+</project>

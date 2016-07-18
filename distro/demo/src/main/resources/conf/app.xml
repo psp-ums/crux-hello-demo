@@ -1,0 +1,15 @@
+<application>
+    <name>Hello Demo Application</name>
+    <customer>Hello</customer>
+    <modules>
+        <bundle>
+            <file-name>helloservice.jar</file-name>
+        </bundle>
+        <webapp>
+            <file-name>helloweb.war</file-name>
+            <context-path>/hello</context-path>
+        </webapp>
+    </modules>
+    <crux-extension-modules>
+    </crux-extension-modules>
+</application>
