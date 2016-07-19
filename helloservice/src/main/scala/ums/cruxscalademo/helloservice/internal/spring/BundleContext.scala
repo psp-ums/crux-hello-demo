@@ -1,15 +1,16 @@
 package ums.cruxscalademo.helloservice.internal.spring
 
-import cellvision.crux.log.{CruxLogger, CruxLog, CruxLogFactory}
+import cellvision.crux.log.{CruxLog, CruxLogger}
 import cellvision.crux.queue.CruxQueueService
 import cellvision.crux.service.CruxServiceRef
 import org.springframework.context.annotation.{Bean, Configuration}
-import ums.cruxscalademo.helloservice.internal.formatting.{Monitoring, Selftester, Formatter}
-import ums.cruxscalademo.helloservice.internal.{PrintQueueReceiver, HelloServiceImpl}
+import ums.cruxscalademo.helloservice.internal.HelloServiceImpl
 import ums.cruxscalademo.helloservice.internal.config.HelloServiceConfig
+import ums.cruxscalademo.helloservice.internal.formatting.{Formatter, Monitoring, Selftester}
+import ums.cruxscalademo.helloservice.internal.queue.PrintQueueReceiver
 
 /**
-  * The bundle context is automatically detected by Crux when it is contained in a spring package
+  * The Spring bundle context is automatically detected by Crux when it is contained in a spring package
   *
   * @author psp
   * @since 2016.07.14

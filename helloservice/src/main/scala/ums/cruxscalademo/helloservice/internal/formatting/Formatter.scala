@@ -2,8 +2,6 @@ package ums.cruxscalademo.helloservice.internal.formatting
 
 import java.util.Date
 
-import cellvision.crux.http.HttpResponseCodes
-import cellvision.crux.soh.{Id, SelftestResult, Selftestable}
 import ums.cruxscalademo.helloservice.Lang.Lang
 import ums.cruxscalademo.helloservice.internal.config.HelloServiceConfig
 import ums.cruxscalademo.helloservice.{HelloMessage, UnknownLanguageException}
@@ -11,7 +9,7 @@ import ums.cruxscalademo.helloservice.{HelloMessage, UnknownLanguageException}
 import scala.collection.concurrent.TrieMap
 
 /**
-  * Class for formatting hello messages
+  * Class for formatting hello messages. Also keep track of some statistics and all unresolved lookups.
   *
   * @author psp
   * @since 2016.07.15
