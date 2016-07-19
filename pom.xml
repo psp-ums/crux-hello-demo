@@ -444,8 +444,8 @@
         </repository>
     </distributionManagement>
     <scm>
-        <connection>scm:git:https://github.com/UMS/Todo.git</connection>
-        <developerConnection>scm:git:https://github.com/UMS/Todo.git</developerConnection>
+        <connection>scm:git:https://github.com/psp-ums/crux-hello-demo.git</connection>
+        <developerConnection>scm:git:https://github.com/psp-ums/crux-hello-demo.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
 </project>
