@@ -8,6 +8,7 @@ import ums.cruxscalademo.helloservice.internal.HelloServiceImpl
 import ums.cruxscalademo.helloservice.internal.config.HelloServiceConfig
 import ums.cruxscalademo.helloservice.internal.formatting.{Formatter, Monitoring, Selftester}
 import ums.cruxscalademo.helloservice.internal.queue.PrintQueueReceiver
+import ums.cruxscalademo.helloservice.internal.timer.HelloTimer
 
 /**
   * The Spring bundle context is automatically detected by Crux when it is contained in a spring package
@@ -32,4 +33,6 @@ class BundleContext {
   @Bean def selftester: Selftester = new Selftester(formatter)
 
   @Bean def monitoring: Monitoring = new Monitoring(formatter)
+
+  @Bean def timer: HelloTimer = new HelloTimer(service, logger)
 }
