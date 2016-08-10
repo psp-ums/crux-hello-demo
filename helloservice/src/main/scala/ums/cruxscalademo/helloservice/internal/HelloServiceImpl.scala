@@ -4,7 +4,6 @@ import cellvision.crux.log.CruxLog
 import cellvision.crux.queue.CruxQueueService
 import ums.cruxscalademo.helloservice.Lang.Lang
 import ums.cruxscalademo.helloservice.internal.formatting.Formatter
-import ums.cruxscalademo.helloservice.internal.queue.PrintQueueReceiver
 import ums.cruxscalademo.helloservice.internal.queue.PrintQueueReceiver._
 import ums.cruxscalademo.helloservice.{HelloMessage, HelloService}
 
@@ -21,5 +20,9 @@ class HelloServiceImpl(formatter: Formatter, cruxQueueService: CruxQueueService,
   }
 
   override def getHelloWorldGreeting(lang: Lang): HelloMessage = formatter.format(lang)
+
+  override def resetStatistics() {
+    formatter.resetStats()
+  }
 
 }

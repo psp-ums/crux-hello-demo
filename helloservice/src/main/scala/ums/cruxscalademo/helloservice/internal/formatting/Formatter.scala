@@ -32,4 +32,6 @@ class Formatter(config: HelloServiceConfig)  {
     HelloMessage(message)
   }
 
+  def resetStats() = invocationStats.clear()
+
 }

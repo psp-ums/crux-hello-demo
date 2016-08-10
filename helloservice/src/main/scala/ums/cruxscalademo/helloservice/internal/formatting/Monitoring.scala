@@ -1,8 +1,7 @@
 package ums.cruxscalademo.helloservice.internal.formatting
 
-import java.util.Date
-
-import cellvision.crux.monitoring.{MonitoredAttribute, MonitoringBean}
+import cellvision.crux.monitoring.{Command, MonitoredAttribute, MonitoringBean}
+import ums.cruxscalademo.helloservice.HelloService
 import ums.cruxscalademo.helloservice.Lang.Lang
 
 /**
@@ -18,6 +17,12 @@ class Monitoring(formatter: Formatter) {
 
   @MonitoredAttribute(name = "Unresolved languages")
   def getUnresolvedLanguages: Iterable[String] = formatter.unresolved.keys.map(_.toString)
+
+  @MonitoredAttribute(name = "Reset statistics")
+  def resetStatistics(): Command =
+    new Command(classOf[HelloService], "resetStatistics")
+
+
 
   case class Invocation(language: Lang, time: String)
 

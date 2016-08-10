@@ -16,4 +16,6 @@ trait HelloService {
 
   def getHelloWorldGreeting(lang: Lang): HelloMessage
 
+  def resetStatistics()
+
 }
