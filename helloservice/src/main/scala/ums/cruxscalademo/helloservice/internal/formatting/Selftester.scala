@@ -5,7 +5,7 @@ import cellvision.crux.soh.{SelftestResult, Id, Selftestable}
 
 /**
   * This is an example of an selftestable bean which hooks into Crux Soh. The runSelftest method is invoked every five
-  * seconds to check health. See CruxConsole -> Monitoring -> Soh.
+  * minutes to check health. See CruxConsole -> Monitoring -> Soh.
   *
   * @author psp
   * @since 2016.07.15
