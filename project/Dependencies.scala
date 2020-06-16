@@ -9,7 +9,7 @@ import sbt._
  */
 object Dependencies {
   val scalaVersion = "2.12.8"
-  val cruxVersion = "3.8.0"
+  val cruxVersion = "3.9.1"
   val springVersion = "4.3.3.RELEASE"
 
   val depsTest = Seq(

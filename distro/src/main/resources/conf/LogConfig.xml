@@ -42,6 +42,7 @@
                 <include>cellvision.crux.*</include>
                 <include>cellvision.flowx.*</include>
                 <include>ums.cruxscalademo.*</include>
+                <exclude>cellvision.crux.CruxAudit</exclude>
             </filter>
             <ignore-succesful-transactions>false</ignore-succesful-transactions>
             <cache-expiry-timeout>30</cache-expiry-timeout>
@@ -75,6 +76,27 @@
             <filter>
                 <include>settlement.crux.soh</include>
             </filter>
+        </logger>
+        <logger class="info.cellvision.log.FileLogger">
+            <log-file>All.log</log-file>
+            <display>
+                <display-to-screen>true</display-to-screen>
+            </display>
+            <log-level>
+                <log-type>DEBUG</log-type>
+                <log-type>TRACE</log-type>
+                <log-type>INFO</log-type>
+                <log-type>FLOW</log-type>
+                <log-type>WARNING</log-type>
+                <log-type>ALERT</log-type>
+                <log-type>STACKTRACE</log-type>
+            </log-level>
+            <filter>
+                <include>cellvision.*</include>
+                <exclude>cellvision.crux.CruxAudit</exclude>
+            </filter>
+            <ignore-succesful-transactions>false</ignore-succesful-transactions>
+            <cache-expiry-timeout>30</cache-expiry-timeout>
         </logger>
     </loggers>
 </log>
