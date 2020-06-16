@@ -6,7 +6,7 @@
             <file-name>helloservice.jar</file-name>
         </bundle>
         <webapp>
-            <file-name>helloweb.war</file-name>
+            <file-name>helloweb.jar</file-name>
             <context-path>/hello</context-path>
         </webapp>
     </modules>

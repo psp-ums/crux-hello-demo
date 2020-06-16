@@ -46,38 +46,9 @@
             <ignore-succesful-transactions>false</ignore-succesful-transactions>
             <cache-expiry-timeout>30</cache-expiry-timeout>
         </logger>
-        <!-- Crux Loggers -->
+        <!-- Error Loggers -->
         <logger class="info.cellvision.log.FileLogger">
-            <log-file>Crux.log</log-file>
-            <log-level>
-                <log-type>DEBUG</log-type>
-                <log-type>TRACE</log-type>
-                <log-type>INFO</log-type>
-                <log-type>FLOW</log-type>
-                <log-type counter="Crux Warnings">WARNING</log-type>
-                <log-type counter="Crux Alerts">ALERT</log-type>
-                <log-type>STACKTRACE</log-type>
-            </log-level>
-            <filter>
-                <include>cellvision.crux.*</include>
-            </filter>
-            <ignore-succesful-transactions>false</ignore-succesful-transactions>
-            <cache-expiry-timeout>30</cache-expiry-timeout>
-        </logger>
-        <logger class="info.cellvision.log.FileLogger">
-            <log-file>CruxErrors.log</log-file>
-            <log-level>
-                <log-type>WARNING</log-type>
-                <log-type>ALERT</log-type>
-            </log-level>
-            <filter>
-                <include>cellvision.crux.*</include>
-            </filter>
-            <ignore-succesful-transactions>false</ignore-succesful-transactions>
-            <cache-expiry-timeout>30</cache-expiry-timeout>
-        </logger>
-        <logger class="info.cellvision.log.FileLogger">
-            <log-file>CruxStacktrace.log</log-file>
+            <log-file>Errors.log</log-file>
             <log-level>
                 <log-type>WARNING</log-type>
                 <log-type>ALERT</log-type>
@@ -85,6 +56,8 @@
             </log-level>
             <filter>
                 <include>cellvision.crux.*</include>
+                <include>cellvision.flowx.*</include>
+                <include>ums.cruxscalademo.*</include>
             </filter>
             <ignore-succesful-transactions>false</ignore-succesful-transactions>
             <cache-expiry-timeout>30</cache-expiry-timeout>

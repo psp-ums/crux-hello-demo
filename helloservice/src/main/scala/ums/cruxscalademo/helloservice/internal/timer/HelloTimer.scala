@@ -17,7 +17,7 @@ class HelloTimer(helloService: HelloService, logger: Log) {
   @Execute
   def executeTimer(): Unit = {
     helloService.printHelloWorld(Lang.NO)
-    logger.debug("Periodic hello world timer invoked")
+    logger.info("Periodic hello world timer invoked")
   }
 
 }
